@@ -2,6 +2,8 @@
 
 // 导入http模块:
 var http = require('http');
+var url = require('url');
+var path = require('path');
 
 // 创建http server，并传入回调函数:
 var server = http.createServer(function (request, response) {

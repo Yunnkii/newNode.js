@@ -245,6 +245,8 @@ console.log("server is listening at http://127.0.0.1:8080");
 
 文件服务器
 
+一是要解析从客户端发来的请求文件的路径
+
 解析url需要Node.js提供的url模块，通过parse()将一个字符串解析为一个url对象
 
 ```
@@ -270,6 +272,8 @@ Url {
   path: '/path/to/file?query=string',
   href: 'http://user:pass@host.com:8080/path/to/file?query=string#hash' }
 ```
+
+二是需要在服务器端找到响应的 文件发给客户端。
 
 处理本地目录
 
